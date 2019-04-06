@@ -23,7 +23,7 @@ class Post extends Component {
 		}
 
 		return (
-			<div className="card my-4 mt-5 shadow ">
+			<div className="card my-4 mt-5">
 				<h3 className="card-header">{this.props.post.title}</h3>
 				<div className="card-body">
 					<h6>ID {this.props.post._id}</h6>

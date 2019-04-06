@@ -11,7 +11,7 @@ class PostListItem extends Component {
 
 	render() {
 		return (
-			<div className="card my-4 shadow">
+			<div className="card my-4">
 				<h3 className="card-header">{this.props.title}</h3>
 				<div className="card-body">
 					<p className="card-text">{this.props.body}</p>

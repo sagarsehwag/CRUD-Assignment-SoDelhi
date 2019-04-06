@@ -2,12 +2,7 @@
 
 > This is a simple CRUD(Create, Read, Update, Dekete) application built using MERN Stack i.e. Node, Express, MongoDB(Mongoose) in the backend(API Server) and React, React-Router, Redux, Redux-Thunk in the front end.
 
-<br/>
-<kbd>
-  <img src="https://i.imgur.com/gbaJ631.gif"/>
-</kbd>
-
-<br/>
+![alt text](https://i.imgur.com/gbaJ631.gif "CRUD Assignment GIF")
 
 ## Usage
 
@@ -17,9 +12,8 @@
 npm install
 ```
 
-You need to run "npm install" in client directory as well
+You need to run "npm install" in _client directory as well as global project directory_
 
-<br/>
 In the project directory, you can run:
 
 ```sh
@@ -40,7 +34,7 @@ npm run server
 
 Runs the backend of app in the development mode by nodemon at http://localhost:5000
 
-## IMPORTANT
+## _Important_
 
 ```sh
 npm run dev

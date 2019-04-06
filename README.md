@@ -4,37 +4,47 @@
 
 ![alt text](https://i.imgur.com/KvddknO.gif "CRUD Assignment GIF")
 
-## Usage
+## Installing Packages & Running Project
 
-### Installing Packages
+Follow these commands exactly to run this project.
 
 ```sh
 npm install
+cd client
+npm install
+cd ..
+npm run dev
 ```
 
-You need to run "npm install" in _client directory as well as global project directory_
+**You need to run "npm install" in _client directory as well as global project directory_**
 
-In the project directory, you can run:
+## Scripts Available
+
+```sh
+"scripts": {
+	"start": "node app.js",
+	"client": "npm start --prefix client",
+	"server": "nodemon app.js",
+	"dev": "concurrently \"npm run server\" \"npm run client\""
+}
+
+```
 
 ```sh
 npm start
 ```
-
-Runs the backend of app in the development mode at http://localhost:5000
-
+1. **npm start :** Runs the backend of app in the development mode at http://localhost:5000  
 ```sh
-npm client
+npm run client
 ```
-
-Runs the frontend of app in the development mode at http://localhost:3000
+2. **npm run client :** Runs the frontend of app in the development mode at http://localhost:3000  
 
 ```sh
 npm run server
 ```
+3. **npm run server :** Runs the backend of app in the development mode by nodemon at http://localhost:5000
 
-Runs the backend of app in the development mode by nodemon at http://localhost:5000
-
-## _Important_
+## Running Project in Development Mode
 
 ```sh
 npm run dev

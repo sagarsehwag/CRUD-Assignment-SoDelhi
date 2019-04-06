@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => (
-	<header className="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+	<header className="navbar navbar-expand-lg navbar-dark bg-info p-3 mb-2 mx-0 rounded">
 		<NavLink to="/" className="navbar-brand">
 			CRUD Assignment
 		</NavLink>

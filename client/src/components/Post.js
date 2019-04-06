@@ -23,7 +23,7 @@ class Post extends Component {
 		}
 
 		return (
-			<div className="jumbotron p-2 m-3 mb-3">
+			<div className="jumbotron p-4 my-4">
 				<h1>{this.props.post.title}</h1>
 				<h6>ID: {this.props.post._id}</h6>
 				<p>{this.props.post.body}</p>

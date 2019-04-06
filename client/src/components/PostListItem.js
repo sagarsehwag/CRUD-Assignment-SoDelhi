@@ -11,7 +11,7 @@ class PostListItem extends Component {
 
 	render() {
 		return (
-			<div className="p-3 jumbotron">
+			<div className="p-4 jumbotron">
 				<h3>{this.props.title}</h3>
 				<p>{this.props.body}</p>
 				<button className="btn btn-danger mx-1" onClick={this.onClickRemoveHandler}>

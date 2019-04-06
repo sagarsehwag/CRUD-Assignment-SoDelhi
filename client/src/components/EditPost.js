@@ -40,7 +40,7 @@ class EditPost extends Component {
 		}
 
 		return (
-			<div>
+			<div className="p-4 my-4 jumbotron">
 				<form onSubmit={this.onFormSubmit}>
 					<div className="form-group">
 						<label htmlFor="title">Title</label>

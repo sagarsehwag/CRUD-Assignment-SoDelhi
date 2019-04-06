@@ -12,7 +12,7 @@ class AppRouter extends Component {
 	render() {
 		return (
 			<BrowserRouter>
-				<div>
+				<div className="p-4">
 					<Header />
 					<Switch>
 						<Route path="/" component={PostList} exact={true} />

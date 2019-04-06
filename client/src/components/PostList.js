@@ -11,8 +11,7 @@ class PostList extends Component {
 
 	render() {
 		return (
-			<div>
-				<h1 className="p-3">Posts List Component</h1>
+			<div className="mb-0 mt-4">
 				{this.props.posts.map((post) => {
 					return <PostListItem key={post._id} {...post} />;
 				})}

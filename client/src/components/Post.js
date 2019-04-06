@@ -23,17 +23,21 @@ class Post extends Component {
 		}
 
 		return (
-			<div className="jumbotron p-4 my-4">
-				<h1>{this.props.post.title}</h1>
-				<h6>ID: {this.props.post._id}</h6>
-				<p>{this.props.post.body}</p>
-				<button className="btn btn-danger mx-1" onClick={this.onClickRemoveHandler}>
-					Remove
-				</button>
+			<div className="card my-4 mt-5 shadow ">
+				<h3 className="card-header">{this.props.post.title}</h3>
+				<div className="card-body">
+					<h6>ID {this.props.post._id}</h6>
+					<p>{this.props.post.body}</p>
 
-				<Link className="btn btn-success mx-1" to={`/edit/${this.props.post._id}`}>
-					Edit
-				</Link>
+					<div className="btn-group" role="group" aria-label="Basic example">
+						<button className="btn btn-danger" onClick={this.onClickRemoveHandler}>
+							Delete
+						</button>
+						<Link className="btn btn-success" to={`/edit/${this.props.post._id}`}>
+							Edit
+						</Link>
+					</div>
+				</div>
 			</div>
 		);
 	}

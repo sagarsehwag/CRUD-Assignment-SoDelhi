@@ -11,20 +11,22 @@ class PostListItem extends Component {
 
 	render() {
 		return (
-			<div className="p-4 jumbotron">
-				<h3>{this.props.title}</h3>
-				<p>{this.props.body}</p>
-				<button className="btn btn-danger mx-1" onClick={this.onClickRemoveHandler}>
-					Remove
-				</button>
-
-				<Link className="btn btn-success mx-1" to={`/edit/${this.props._id}`}>
-					Edit
-				</Link>
-
-				<Link className="btn btn-primary mx-1" to={`/posts/${this.props._id}`}>
-					Show Details
-				</Link>
+			<div className="card my-4 shadow">
+				<h3 className="card-header">{this.props.title}</h3>
+				<div className="card-body">
+					<p className="card-text">{this.props.body}</p>
+					<div className="btn-group" role="group" aria-label="Basic example">
+						<Link className="btn btn-danger" onClick={this.onClickRemoveHandler}>
+							Delete
+						</Link>
+						<Link className="btn btn-success" to={`/edit/${this.props._id}`}>
+							Edit
+						</Link>
+						<Link className="btn btn-primary" to={`/posts/${this.props._id}`}>
+							Show Details
+						</Link>
+					</div>
+				</div>
 			</div>
 		);
 	}

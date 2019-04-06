@@ -1,5 +1,5 @@
 {
-	"name": "crud-assignment-backend",
+	"name": "crud-assignment",
 	"version": "1.0.0",
 	"description": "so delhi",
 	"main": "app.js",
@@ -15,6 +15,6 @@
 		"concurrently": "^4.1.0",
 		"cors": "^2.8.5",
 		"express": "^4.16.4",
-		"mongoose": "^5.4.21"
+		"mongoose": "^5.4.22"
 	}
 }

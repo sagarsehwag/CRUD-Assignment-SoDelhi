@@ -1,0 +1,19 @@
+{
+	"name": "crud-assignment-backend",
+	"version": "1.0.0",
+	"description": "so delhi",
+	"main": "app.js",
+	"scripts": {
+		"client": "npm start --prefix client",
+		"server": "nodemon app.js",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"author": "sagarsehwag",
+	"license": "ISC",
+	"dependencies": {
+		"concurrently": "^4.1.0",
+		"cors": "^2.8.5",
+		"express": "^4.16.4",
+		"mongoose": "^5.4.21"
+	}
+}

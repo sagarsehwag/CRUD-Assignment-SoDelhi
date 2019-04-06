@@ -4,6 +4,7 @@
 	"description": "so delhi",
 	"main": "app.js",
 	"scripts": {
+		"start": "node app.js",
 		"client": "npm start --prefix client",
 		"server": "nodemon app.js",
 		"dev": "concurrently \"npm run server\" \"npm run client\""

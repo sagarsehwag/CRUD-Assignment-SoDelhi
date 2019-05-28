@@ -2,6 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const compression = require("compression");
 
 // Express Initialisation
 const app = express();
@@ -29,6 +30,12 @@ db.once("open", () => console.log("MongoDB Connected..."));
 
 // Importing Models
 const Post = require("./models/Post");
+app.use(compression());
+app.use(express.static("client/build"));
+
+// app.get("*", (req, res) => {
+// 	res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+// });
 
 app.get("/posts", (req, res) => {
 	Post.find({})

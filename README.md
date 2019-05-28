@@ -1,6 +1,6 @@
 # CRUD Assignment
 
-> This is a simple CRUD(Create, Read, Update, Dekete) application built using MERN Stack i.e. Node, Express, MongoDB(Mongoose) in the backend(API Server) and React, React-Router, Redux, Redux-Thunk in the front end.
+This is a simple CRUD(Create, Read, Update, Dekete) application built using MERN Stack i.e. Node, Express, MongoDB(Mongoose) in the backend(API Server) and React, React-Router, Redux, Redux-Thunk in the front end.
 
 ![alt text](https://i.imgur.com/KvddknO.gif "CRUD Assignment GIF")
 

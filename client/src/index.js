@@ -7,6 +7,9 @@ import configureStore from "./store/configureStore";
 
 const reduxStore = configureStore();
 
+const { whyDidYouUpdate } = require("why-did-you-update");
+whyDidYouUpdate(React);
+
 ReactDOM.render(
 	<Provider store={reduxStore}>
 		<AppRouter />
